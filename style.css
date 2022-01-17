@@ -154,4 +154,8 @@ form img{
     .right-inner-container{
         width:auto;
     }
+
+    .button{
+        font-size:20px;
+    }
 }
