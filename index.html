@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <main>
+    <header class="header">
+      <img src="images/logo.svg">
+    </header>
+    <div class="outer-container">
+      <div class="left-inner-container">
+        <p>Bill</p>
+         <div class="filling-container"> 
+            <form>
+              <img src="images/icon-dollar.svg">
+              <input placeholder="0" type="text" id="fname" name="fname">
+            </form>
+         </div>
+          <p>Select Tip %</p>
+          <div class="tip-area">
+            <div>
+              <button class="button">5%</button>
+              <button class="button">10%</button>
+              <button class="button">15%</button>
+            </div> 
+            <div>
+              <button class="button">25%</button>
+              <button class="button">50%</button>
+              <form>
+                <input class="button cyanize" placeholder="Custom" type="text" id="fname" name="fname">
+              </form>
+            </div>
+          </div>
+          <p>Number of People</p>
+          <div class="filling-container">
+            <form>
+              <img src="images/icon-person.svg">
+              <input type="text" placeholder="0" id="fname" name="fname">
+            </form>
+          </div>
+      </div>
+
+      <div class="right-inner-container">
+        <span>
+        Tip Amount
+        </span>
+        <span class="value">
+          $0.01
+        </span>
+        <div class="person-counter">
+          / person 
+        </div>
+        <br><br>
+          <span>
+          Total
+          </span>
+          <span class="value">
+            $0.01
+          </span>
+          <div class="person-counter">
+            / person 
+        </div>
+        <button onclick="resetdata()" id="button-reset">Reset</button>
+    </div>
+  </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

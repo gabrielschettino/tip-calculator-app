@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+
+body{
+    background-color: #c8e4e4;
+    font-family:'Space Mono';
+    font-weight: bold;
+}
+
+form{
+    display: inline;
+}
+
+input{
+    text-align: center;
+    font-family: 'Space Mono';
+    font-size: 24px;
+    border: none;
+    background-color:hsl(189, 41%, 97%);
+}
+
+.header{
+    text-align: center;
+    margin:100px 0px 100px 0;
+}
+
+.outer-container{
+    display:flex;
+    flex-direction: row;
+    width: 55%;
+    margin: auto;   
+    background-color: white;
+    border-radius:15px;
+    padding: 30px;
+}
+
+.left-inner-container{
+    width: 50%;
+    padding: 30px;
+}
+
+.button{
+    margin-bottom:20px;
+    font-family:'Space Mono';
+    border: none;
+    cursor: pointer;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius:10px;
+    width: 30%;
+    height: 2.5rem;
+}
+
+.button:hover{
+    background-color:hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    transition: 0.3s ease;
+}
+
+.right-inner-container{
+    padding: 50px;
+    width: 50%;
+    background-color:hsl(183, 100%, 15%);
+    color:hsl(185, 41%, 84%);
+    border-radius:20px;
+}
+
+.tip-area{
+    width: 100%;
+}
+
+.filling-container{
+    padding: 10px;
+    background-color:hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    vertical-align: middle;
+    border-radius:10px;
+}
+
+.cyanize{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+.cyanize:hover{
+    border: 3px solid hsl(172, 67%, 45%);
+    transition: 0.3s ease;
+}
+
+div .filling-container:hover{
+    border: 3px solid hsl(172, 67%, 45%);
+    transition: 0.3s ease;
+}
+
+.filling-container input{
+    width: 80%;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+}
+
+form img{
+    vertical-align: middle;
+    padding-bottom: 2%;
+}
+
+#button-reset{
+    width:100%;
+    padding:10px;
+    position: relative;
+    top: 48%;
+    font-family: 'Space Mono';
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color:hsl(172, 67%, 45%);
+    border-radius:5px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#button-reset:hover{
+    background-color:hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    transition: 0.3s ease;
+}
+
+.person-counter{
+    font-size:14px;
+    color:hsl(184, 14%, 56%);
+}
+
+.value{
+    float:right;
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+}
+
+
+  
+
+@media only screen and (max-width: 600px){
+    .outer-container{
+        width:auto;
+        display: block;
+    }
+
+    .left-inner-container{
+        width:auto;
+    }
+
+    .right-inner-container{
+        width:auto;
+    }
+}
