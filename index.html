@@ -20,21 +20,21 @@
          <div class="filling-container"> 
             <form>
               <img src="images/icon-dollar.svg" alt="dollar icon">
-              <input autocomplete="off" placeholder="0" type="number" id="fname" name="fname">
+              <input id="billvalue" autocomplete="off" onkeyup="calculatetip()" placeholder="0" type="number">
             </form>
          </div>
           <p>Select Tip %</p>
           <div class="tip-area">
             <div>
-              <button class="button">5%</button>
-              <button class="button">10%</button>
-              <button class="button">15%</button>
+              <button onclick="changetip(0.05)" class="button">5%</button>
+              <button onclick="changetip(0.1)" class="button">10%</button>
+              <button onclick="changetip(0.15)" class="button">15%</button>
             </div> 
             <div>
-              <button class="button">25%</button>
-              <button class="button">50%</button>
+              <button onclick="changetip(0.25)" class="button">25%</button>
+              <button onclick="changetip(0.5)" class="button">50%</button>
               <form>
-                <input class="button cyanize" autocomplete="off" placeholder="Custom" type="text" id="fname" name="fname">
+                <input class="button cyanize" onkeyup="customtip()" autocomplete="off" placeholder="Custom" type="number">
               </form>
             </div>
           </div>
@@ -42,7 +42,7 @@
           <div class="filling-container">
             <form>
               <img src="images/icon-person.svg" alt="person icon">
-              <input type="number" autocomplete="off" placeholder="0" id="fname" name="fname">
+              <input type="number" id="npeople" onkeyup="calculatetip()" autocomplete="off" placeholder="0">
             </form>
           </div>
       </div>
@@ -67,7 +67,7 @@
           <div class="person-counter">
             / person 
         </div>
-        <button onclick="resetdata()" id="button-reset">Reset</button>
+        <button onclick="calculatetip()" id="button-reset">Reset</button>
     </div>
   </div>
   </main>
