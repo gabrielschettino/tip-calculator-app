@@ -2,7 +2,12 @@ var tip = 0.05;
 
 function resetdata(){
     tip = 0.05;
-    
+    document.getElementsByClassName("value")[0].innerHTML = '$0.00';
+    document.getElementsByClassName("value")[1].innerHTML = '$0.00';
+
+    document.getElementById("billvalue").value = 0;
+    document.getElementsByClassName("button cyanize")[0].value = 0;
+    document.getElementById("npeople").value = 0;
 }
 
 function customtip(){
@@ -22,9 +27,7 @@ function calculatetip(){
     var tipamountperson = (bill * tip)/npeople;
     var totalperson = (bill/npeople) + tipamountperson;
     
-    console.log(totalperson);
-    console.log(tipamountperson);
-
-    
+    document.getElementsByClassName("value")[0].innerHTML = '$' + tipamountperson;
+    document.getElementsByClassName("value")[1].innerHTML = '$' + totalperson;
 }
 
